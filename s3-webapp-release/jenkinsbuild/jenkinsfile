@@ -1,12 +1,12 @@
 pipeline {
     agent {
-        label 'agent1'
+        label 'Jenkins_Agent_1'
     }
 
     stages{
         stage("AppCode Checkout"){
             steps{
-                git branch:'jenkis-learning', url: 'https://github.com/prateekkumawat/kubernetes-12-ay.git'
+                git branch:'master', url: 'https://github.com/AshwiniKY/Jenkins-Learning.git'
             }
         }
 
