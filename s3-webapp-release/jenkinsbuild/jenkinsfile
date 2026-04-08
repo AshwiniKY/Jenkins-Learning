@@ -4,7 +4,7 @@ pipeline {
     }
 
     environment {
-        S3_BUCKET = 'aws-jenkins-webapp'
+        S3_BUCKET = 'aws-jenkins-webapp'    
         AWS_REGION = 'ap-south-1'
     }
 
