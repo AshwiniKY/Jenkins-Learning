@@ -1,17 +1,17 @@
 pipeline {
     agent {
-        label 'agent1'
+        label 'Agent_1'
     }
 
     environment {
-        S3_BUCKET = 'amazon-jenkins-web'
-        AWS_REGION = 'ap-south-2'
+        S3_BUCKET = 'aws-jenkins-webapp'
+        AWS_REGION = 'ap-south-1'
     }
 
     stages{
         stage("AppCode Checkout"){
             steps{
-                git branch:'jenkis-learning', url: 'https://github.com/prateekkumawat/kubernetes-12-ay.git'
+                git branch:'master', url: 'https://github.com/AshwiniKY/Jenkins-Learning.git'
             }
         }
         stage("Deploy Code to S3"){
